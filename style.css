@@ -1,7 +1,88 @@
 /*
 Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
+background color:#B73E3E  
+font color: #FF1E1E  
+secondary color:#000000 
+tertiary color:#F8EDE3  
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@500&display=swap');
+
+html {
+    font-size: 62.5%; /*default font size is 16px- 16 times 62.5=10 px. Therefore 1 rem will now be equal to 10 px */
+}
+
+
+header {
+    margin:0 4rem; /*40 px total */
+    letter-spacing: 0.8rem;
+    text-align: center;
+    border-bottom:1px solid #F8EDE3;
+    border-right:1px solid #F8EDE3;
+    border-left:1px solid #F8EDE3;
+    padding: 0.5rem;
+    box-shadow:4px 4px 5px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    font-size:1.1rem;
+}
+
+body {
+    background-color: #B73E3E;
+    color: #000000;
+    font-family: 'Noto Sans Mono', Medium;
+    margin: 0;
+}
+cite {
+    font-size:2rem;
+}
+p {
+    font-size: 1.2
+}
+
+
+
+
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 7rem 4rem;
+}
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius:30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.imageCard a{
+    text-decoration:none;
+    color:#F8EDE3;
+}
+
+.cardText {
+    color: #000000;
+    text-align: center;
+    padding: 5rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.6rem;
+    }
+    
+    .gallery{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap:wrap;
+        }
+        
+    .imageCard {
+        max-width:28%;
+    }
+}
